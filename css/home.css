@@ -134,7 +134,8 @@ a
 
 .normalText
 {
-    padding-left: 50px;
+    padding-left: 30px;
+    padding-right: 20px;
     font-size: 14pt;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -150,11 +151,12 @@ a
 .eventContainer
 {
     height: 350px;
-    display: none;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     border-radius: 15px;
+    transition: opacity 0.5s ease-in;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
