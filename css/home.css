@@ -1,0 +1,34 @@
+.containerBanner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+#logoBanner
+{
+    height: 500px;
+    margin-bottom: -50px;
+}
+
+#buttonBanner
+{
+    background-color: #125472;
+    color: white;
+    padding: 10px 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+#buttonBanner > a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
+#buttonBanner:hover
+{
+    background-color: #bf616a;
+}
