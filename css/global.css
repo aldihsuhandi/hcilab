@@ -66,9 +66,10 @@ body
 }
 
 /* Body */
-.body
+#body
 {
     height: auto;
+    padding-bottom: 25px;
     /* width: 100%; */
 }
 
