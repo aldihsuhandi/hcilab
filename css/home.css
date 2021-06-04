@@ -1,9 +1,18 @@
+a
+{
+    text-decoration: none;
+}
+
+#banner
+{
+    background-color: grey;
+}
+
 .containerBanner
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
 }
 
 #logoBanner
@@ -15,17 +24,13 @@
 #buttonBanner
 {
     background-color: #125472;
+    width: 100px;
     color: white;
     padding: 10px 50px;
     font-weight: 700;
     margin-bottom: 50px;
-    border-radius: 10px;
-}
-
-#buttonBanner > a:hover
-{
+    border-radius: 15px;
     text-decoration: none;
-    color: white;
 }
 
 #buttonBanner:hover

@@ -79,10 +79,10 @@ body
     display: flex;
     justify-content: center;
     align-content: center;
-    height: 50px;
     width: 100%;
     text-align: center;
     padding: 10px 0;
     background-color: #4a86a0;
     color: white;
+    font-size: 10pt;
 }
