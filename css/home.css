@@ -43,24 +43,90 @@ a
 /* event */
 #event
 {
-    ;
+    position: relative;
+    margin: 0px 20%;
 }
 
 .eventContainer
 {
-    display: flex;
-    justify-content: center;
+    height: 350px;
+    display: none;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: row;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .eventImage
 {
-    height: 400px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 1;
+    margin: 10px;
+    width: 550px;
+    border-radius: 15px;
 }
 
 .eventText
 {
-    z-index: 2;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #4a86a0;
+    color: white;
+    margin: 0 10px; 
+    border-radius: 15px;
+}
+
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: grey;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.2s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.next
+{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    right: 0;
+}
+
+.prev:hover, .next:hover
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade 
+{
+    from {opacity: .4}
+    to {opacity: 1}
 }
