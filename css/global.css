@@ -10,7 +10,8 @@ body
 /* Header */
 #header
 {
-    /* position: sticky; */
+    top: 0;
+    position: sticky;
     display: flex;
     align-items: center;
     height: 80px;

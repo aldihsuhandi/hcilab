@@ -40,11 +40,111 @@ a
     background-color: #bf616a;
 }
 
+/* description */
+.cardContainer
+{
+    position: relative;
+    margin: 30px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#cardDescription
+{
+    width: 50%;
+    padding: 25px;
+    background-color: #4a86a0;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.reviewCard
+{
+    padding-right: 10px;
+    background: linear-gradient(90deg, #0c3648 0%, #125472 100%); 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.textContainer
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.reviewText
+{
+    color: #f2f2f2;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.reviewer
+{
+    color: #f2f2f2;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+
+.logoReview
+{
+    width: 125px;
+    height: auto;
+}
+
+#description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#descTitleText
+{
+    color: #dd7917;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bolder;
+}
+
+#descGamemode
+{
+    color: #0e3e5b;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bolder;
+}
+
+.normalText
+{
+    padding-left: 50px;
+    font-size: 14pt;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* event */
 #event
 {
     position: relative;
-    margin: 0px 20%;
+    margin: 20px 10%;
 }
 
 .eventContainer
