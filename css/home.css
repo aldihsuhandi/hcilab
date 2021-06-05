@@ -6,15 +6,32 @@ a
 /* Banner */
 #banner
 {
-    background-color: grey;
+    position: relative;
+    height: 600px;
     margin-bottom: 25px;
+}
+
+#bannerBackground
+{
+    height: 100%;
+    width: 100%;
+    background-image: url("../content/background/1.jpg");
+    background-position: top;
+    filter: blur(4px);
+    z-index: 1;
 }
 
 .containerBanner
 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
 }
 
 #logoBanner
@@ -108,7 +125,7 @@ a
     height: auto;
 }
 
-#description
+.description
 {
     display: flex;
     flex-direction: column;
@@ -116,7 +133,7 @@ a
     width: 50%;
 }
 
-#descTitleText
+.descTitleText
 {
     color: #dd7917;
     text-align: center;
@@ -124,7 +141,7 @@ a
     font-weight: bolder;
 }
 
-#descGamemode
+.descGamemode
 {
     color: #0e3e5b;
     text-align: center;
@@ -139,6 +156,14 @@ a
     font-size: 14pt;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#gameplayimg
+{
+    padding: 5px;
+    border-radius: 15px;
+    width: 50%;
+    height: auto;
 }
 
 /* event */
@@ -214,7 +239,8 @@ a
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.fade {
+.fade 
+{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
