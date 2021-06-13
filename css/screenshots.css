@@ -1,0 +1,115 @@
+hr
+{
+    width: 100%;
+}
+
+#banner
+{
+    position: relative;
+    background-color: #eceff4;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#textBanner
+{
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20pt;
+    color: #4c566a;
+}
+
+.headerContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.headerContainer > hr
+{
+    margin-top: 13px;
+}
+
+.headerText
+{
+    position: absolute;
+    top: 0;
+    background-color: white;
+    width: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#gameScreenshotSlider
+{
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 100px;
+}
+
+.gameImgSlider
+{
+    cursor: pointer;
+    display: block;
+    width: 30%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.gameImgSlider:hover
+{
+    /* border-radius: 10px; */
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 21.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 50px 80px rgba(0, 0, 0, 0.12)
+}
+
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    color: #5e81ac;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.2s;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2;
+}
+
+.prev
+{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    left: 0;
+}
+
+.next
+{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    right: 0;
+}
+
+.prev:hover, .next:hover
+{
+    background-color: rgba(216, 222, 233, 0.8);
+}

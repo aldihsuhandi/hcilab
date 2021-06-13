@@ -1,29 +1,37 @@
-var idx = 1;
-showEvent(idx);
+var eventIdx = 0;
+var eventElement;
+var len;
+
+initEventSlider();
 
 function changeEvent(n)
 {
-    showEvent(idx += n);
+    $(".eventContainer").fadeOut(function(){
+        $(".eventContainer").fadeIn();
+    });
+    showEventSlide(eventIdx += n);
 }
 
-function showEvent(n)
+function initEventSlider()
 {
-    var eventSlide = document.getElementsByClassName("eventContainer");
-    var len = eventSlide.length;
+    eventElement = $(".eventContainer").get();
+    len = eventElement.length;
+    console.log(len);
+    showEventSlide(eventIdx);
+}
 
-    if(n > len)
+function showEventSlide(n)
+{
+    $(".eventContainer").remove();
+
+    if(n >= len)
     {
-        idx = 1;
+        eventIdx = 0;
     }
-    else if(n < 1)
+    else if(n < 0)
     {
-        idx = len;
+        eventIdx = len - 1;
     }
 
-    for(var i = 0;i < len;++i){
-        eventSlide[i].style.display = "none";
-    }
-
-    eventSlide[idx - 1].style.display = "flex";
-    eventSlide[idx - 1].fadeIn("300");
+    $("#event").append(eventElement[eventIdx]);
 }

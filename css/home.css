@@ -17,7 +17,7 @@ a
     width: 100%;
     background-image: url("../content/background/1.jpg");
     background-position: top;
-    filter: blur(4px);
+    filter: blur(3px);
     z-index: 1;
 }
 
@@ -87,7 +87,7 @@ a
 .reviewCard
 {
     padding-right: 10px;
-    background: linear-gradient(90deg, #0c3648 0%, #125472 100%); 
+    background: linear-gradient(90deg, #0c3648 0%, #125472 100%);
     text-align: center;
     display: flex;
     justify-content: center;
@@ -202,11 +202,11 @@ a
     position: relative;
     background-color: #4a86a0;
     color: white;
-    margin: 0 10px; 
+    margin: 0 10px;
     border-radius: 15px;
 }
 
-.prev, .next 
+.prev, .next
 {
     cursor: pointer;
     position: absolute;
@@ -219,6 +219,7 @@ a
     transition: 0.2s;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    z-index: 9;
 }
 
 .prev
@@ -237,24 +238,4 @@ a
 .prev:hover, .next:hover
 {
     background-color: rgba(0, 0, 0, 0.8);
-}
-
-.fade 
-{
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade 
-{
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade 
-{
-    from {opacity: .4}
-    to {opacity: 1}
 }
