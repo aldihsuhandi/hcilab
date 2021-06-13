@@ -18,21 +18,36 @@ function addGameSlide(n)
 
 function showGameSlides(n)
 {
-    $(".gameImgSlider").remove();
-    console.log(gameImg[1]);
+    $(".gameImgSlider").fadeOut("fast", function(){
+        $(".gameImgSlider").remove();
+        // console.log(gameImg[1]);
 
-    if(n > len)
-    {
-        gameplayIdx = 0;
-    }
-    else if(n < 0)
-    {
-        gameplayIdx = len - 1;
-    }
+        if(n > len)
+        {
+            gameplayIdx = 0;
+        }
+        else if(n < 0)
+        {
+            gameplayIdx = len - 1;
+        }
 
-    for(var i = gameplayIdx;i < gameplayIdx + 3;++i){
-        var t = i % len;
-        console.log(t);
-        $("#gameScreenshotSlider").append(gameImg[t]);
-    }
+        for(var i = gameplayIdx;i < gameplayIdx + 3;++i){
+            var t = i % len;
+            // console.log(t);
+            $("#gameScreenshotSlider").append(gameImg[t]);
+        }
+
+        $(".gameImgSlider").fadeIn("fast");
+    })
+}
+
+function changeCharacterImg(indx)
+{
+    var charaImg = document.getElementsByClassName("charaImg");
+    var pth = charaImg[indx].src;
+
+    $("#charaMainImg").remove();
+    var img = $('<img id = "charaMainImg">');
+    img.attr('src', pth);
+    img.prependTo('#charaScreenshot');
 }

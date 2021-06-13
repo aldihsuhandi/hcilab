@@ -113,3 +113,60 @@ hr
 {
     background-color: rgba(216, 222, 233, 0.8);
 }
+
+/* character screenshot */
+#charaScreenshot
+{
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#charaMainImg
+{
+    width: 20%;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+#charaMainImg:hover
+{
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 21.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 50px 80px rgba(0, 0, 0, 0.12)
+}
+
+#charaImgSelect
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.charaImg
+{
+    cursor: pointer;
+    height: 200px;
+    margin: 50px 25px;
+    transition: 0.2s;
+}
+
+.charaImg:hover
+{
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 21.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 50px 80px rgba(0, 0, 0, 0.12)
+}

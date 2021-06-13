@@ -6,9 +6,6 @@ initEventSlider();
 
 function changeEvent(n)
 {
-    $(".eventContainer").fadeOut(function(){
-        $(".eventContainer").fadeIn();
-    });
     showEventSlide(eventIdx += n);
 }
 
@@ -22,16 +19,20 @@ function initEventSlider()
 
 function showEventSlide(n)
 {
-    $(".eventContainer").remove();
+    $(".eventContainer").fadeOut("fast", function(){
+        $(".eventContainer").remove();
 
-    if(n >= len)
-    {
-        eventIdx = 0;
-    }
-    else if(n < 0)
-    {
-        eventIdx = len - 1;
-    }
+        if(n >= len)
+        {
+            eventIdx = 0;
+        }
+        else if(n < 0)
+        {
+            eventIdx = len - 1;
+        }
 
-    $("#event").append(eventElement[eventIdx]);
+        $("#event").append(eventElement[eventIdx]);
+
+        $(".eventContainer").fadeIn("fast");
+    });
 }
