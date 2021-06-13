@@ -44,10 +44,11 @@ function showGameSlides(n)
 function changeCharacterImg(indx)
 {
     var charaImg = document.getElementsByClassName("charaImg");
+    var len = charaImg.length;
     var pth = charaImg[indx].src;
 
-    $("#charaMainImg").remove();
-    var img = $('<img id = "charaMainImg">');
-    img.attr('src', pth);
-    img.prependTo('#charaScreenshot');
+    $("#charaMainImg").fadeOut("fast", function(){
+        console.log($("#charaMainImg").attr("src", pth));
+        $("#charaMainImg").fadeIn("fast");
+    });
 }
