@@ -1,0 +1,18 @@
+.banner-image{
+    display: flex;
+    min-height: 600px;
+    background-image: url("../content/background/stadium.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
+}
+
+.banner-image > h1{
+    display: absolute;
+    color: rgba(249, 249, 249, 0.9);
+    font-size: 5em;
+    /* Temp */
+    font-family: sans-serif;
+}
