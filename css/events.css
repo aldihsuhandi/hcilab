@@ -29,7 +29,6 @@
     margin-top: 2%;
     margin-bottom: 2%;
     min-height: 400px;
-    min-width: 300px;
 }
 
 .container.row {
@@ -37,6 +36,7 @@
     background-color: white;
     margin: 4%;
     border-radius: 25px;
+    min-width: 26%;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
