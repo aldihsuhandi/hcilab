@@ -239,3 +239,46 @@ a
 {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+@media (max-width: 800px) {
+    .cardContainer{
+        flex-direction: column;
+    }
+
+    #cardDescription{
+        width: auto;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        margin-right: 0px;
+    }
+
+    .description{
+        width: auto;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    #gameplayimg{
+        width: auto;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+
+    .eventContainer{
+        min-height: 500px;
+        flex-direction: column;
+    }
+
+    .eventImage{
+        min-height: 50%;
+        width: 94%;
+    }
+
+    .eventText{
+        min-height: 40%;
+        width: 94%;
+        margin-bottom: 3%;
+    }
+
+}
