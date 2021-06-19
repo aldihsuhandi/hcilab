@@ -17,6 +17,8 @@ a
     width: 100%;
     background-image: url("../content/background/1.jpg");
     background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
     filter: blur(3px);
     z-index: 1;
 }
@@ -204,6 +206,8 @@ a
     color: white;
     margin: 0 10px;
     border-radius: 15px;
+    font-size: 52px;
+    font-weight: bold;
 }
 
 .prev, .next
@@ -240,6 +244,25 @@ a
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media (max-width: 1400px) {
+    .eventContainer{
+        min-height: 520px;
+        flex-direction: column;
+    }
+
+    .eventImage{
+        min-height: 60%;
+        width: 94%;
+    }
+
+    .eventText{
+        min-height: 30%;
+        width: 94%;
+        margin-bottom: 3%;
+    }
+
+}
+
 @media (max-width: 800px) {
     .cardContainer{
         flex-direction: column;
@@ -264,21 +287,4 @@ a
         margin-right: 2%;
         margin-bottom: 2%;
     }
-
-    .eventContainer{
-        min-height: 500px;
-        flex-direction: column;
-    }
-
-    .eventImage{
-        min-height: 50%;
-        width: 94%;
-    }
-
-    .eventText{
-        min-height: 40%;
-        width: 94%;
-        margin-bottom: 3%;
-    }
-
 }
