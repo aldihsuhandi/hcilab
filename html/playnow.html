@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/playnow.css">
+    <script src = "../js/playnow.js" defer></script>
     <title>Play Now</title>
 </head>
 <body>
@@ -20,13 +21,18 @@
     </div>
     <div id = "body">
         <div id = "container">
-            <form name = "playnow" action="index.html" onsubmit = "return validateForm()" method="post">
+            <h1>REGISTRATION FORM</h1>
+            <form name = "playnow" action="" onsubmit = "return validateForm()" method="post">
 
                 <label for = "name">Your name</label>
                 <input type = "text" name = "name" id = "name" placeholder = "Your name">
+                <div class = "warning" id = "namewarn">
+                </div>
 
                 <label for = "age">Your age</label>
                 <input type = "text" age = "age" id = "age" placeholder = "Your age">
+                <div class = "warning" id = "agewarn">
+                </div>
 
                 <label for = "gender">Gender</label>
                 <select id = "gender" name = "gender">
@@ -43,23 +49,35 @@
                 <label for="regionAsia">Europe</label><br>
                 <input type="radio" name="region" value="Australia" id = "regionAustralia">
                 <label for="regionAustralia">Australia</label><br>
+                <div class = "warning" id = "regionwarn">
+                </div>
 
                 <div class="separator"></div>
                 <label for = "uname" >Your username</label>
                 <input type = "text" name = "uname" id = "uname" placeholder = "Your Username">
+                <div class = "warning" id = "unamewarn">
+                </div>
 
                 <label for = "email">Email</label>
                 <input type = "text" name = "email" id = "email" placeholder = "Your email">
+                <div class = "warning" id = "emailwarn">
+                </div>
 
                 <label for = "pwd">Password</label>
                 <input type = "password" name = "pwd" id = "pwd" placeholder = "Password">
+                <div class="warning" id = "pwdwarn">
+                </div>
 
                 <label for = "pwdV">Password Validation</label>
                 <input type = "password" name = "pwdV" id = "pwdV" placeholder = "Retype Password">
+                <div class="warning" id = "pwdVwarn">
+                </div>
 
                 <div class="separator"></div>
                 <input type="checkbox" name="eula" value="yes" id="eula">
                 <label for="eula">I have read and agree to the <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">END USER LICENSE AGREEMENT</a></label>
+                <div class="warning" id = "eulawarn">
+                </div>
 
                 <input type="submit" name="" value="Play Now!">
             </form>
