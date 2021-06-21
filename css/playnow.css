@@ -1,0 +1,70 @@
+#body
+{
+    height: auto;
+    position: relative;
+    padding: 25px 0;
+    background-image: url("../content/background/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#container
+{
+    margin: 0 20%;
+    background-color: #eceff4;
+    border-radius: 15px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 21.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 50px 80px rgba(0, 0, 0, 0.12)
+}
+
+#container > form
+{
+    padding: 25px 50px;
+    display: block;
+}
+
+#container > form > label
+{
+    font-size: 14pt;
+    padding: 10px 0;
+}
+
+input[type=text], input[type=submit], input[type=password], select
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit]
+{
+    margin-top: 25px;
+    border-radius: 15px;
+    background-color: #bf616a;
+    color: #2e3440;
+}
+
+input[type=submit]:hover
+{
+    background-color: #d66d78;
+}
+
+input[type=radio]
+{
+    margin-left: 50px;
+    padding: 25px;
+}
+
+.separator
+{
+    margin-top: 25px;
+}

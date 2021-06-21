@@ -19,6 +19,51 @@
         </div>
     </div>
     <div id = "body">
+        <div id = "container">
+            <form name = "playnow" action="index.html" onsubmit = "return validateForm()" method="post">
+
+                <label for = "name">Your name</label>
+                <input type = "text" name = "name" id = "name" placeholder = "Your name">
+
+                <label for = "age">Your age</label>
+                <input type = "text" age = "age" id = "age" placeholder = "Your age">
+
+                <label for = "gender">Gender</label>
+                <select id = "gender" name = "gender">
+                    <option value = "Male">Male</option>
+                    <option value = "female">Female</option>
+                    <option value = "attack helicopter">Attack Helicopter</option>
+                    <option value = "indomie">Sexually Attracted to Indomie</option>
+                </select>
+
+                <label for = "">Region</label><br>
+                <input type="radio" name="region" value="Asia" id = "regionAsia">
+                <label for="regionAsia">Asia</label><br>
+                <input type="radio" name="region" value="Europ" id = "regionEurope">
+                <label for="regionAsia">Europe</label><br>
+                <input type="radio" name="region" value="Australia" id = "regionAustralia">
+                <label for="regionAustralia">Australia</label><br>
+
+                <div class="separator"></div>
+                <label for = "uname" >Your username</label>
+                <input type = "text" name = "uname" id = "uname" placeholder = "Your Username">
+
+                <label for = "email">Email</label>
+                <input type = "text" name = "email" id = "email" placeholder = "Your email">
+
+                <label for = "pwd">Password</label>
+                <input type = "password" name = "pwd" id = "pwd" placeholder = "Password">
+
+                <label for = "pwdV">Password Validation</label>
+                <input type = "password" name = "pwdV" id = "pwdV" placeholder = "Retype Password">
+
+                <div class="separator"></div>
+                <input type="checkbox" name="eula" value="yes" id="eula">
+                <label for="eula">I have read and agree to the <a href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ">END USER LICENSE AGREEMENT</a></label>
+
+                <input type="submit" name="" value="Play Now!">
+            </form>
+        </div>
     </div>
     <div id = "footer">
         © 2021 Flawsalla Games.<br>
